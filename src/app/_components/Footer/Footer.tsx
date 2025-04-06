@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import img from '../../../../public/assets/Screenshot 2025-04-05 142327.png';
 import Image from 'next/image';
-import { FaEnvelope, FaFacebookF, FaInstagram, FaPhone, FaPhoneAlt, FaTiktok } from 'react-icons/fa';
+import { FaEnvelope, FaFacebookF, FaInstagram, FaPhoneAlt, FaTiktok } from 'react-icons/fa';
 import { FaLocationDot, FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {

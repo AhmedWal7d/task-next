@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../Nabar/Navbar'
 import SliderCards from '../SliderCards/SliderCards'
 import ServicesSection from '../ServicesSection/ServicesSection'
 import TourSliderSection from '../TourSliderSection/TourSliderSection'
