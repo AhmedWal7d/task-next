@@ -6,13 +6,13 @@ import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import img1 from "../../../../public/assets/images.jpeg";
 import img2 from "../../../../public/assets/Sahaba.jpg";
 import { LuPen } from "react-icons/lu";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface Tour {
     title: string;
     price: number;
     rating: number;
-    img?: object;
+    img?: StaticImageData;
 }
 
 const tours: Tour[] = [
@@ -88,11 +88,15 @@ export default function TourSliderSection() {
                                             <FaStar className="text-warning" size={14} />
                                             {tour.rating}
                                         </div>
-                                        <Image
-                                            src={tour?.img}
-                                            alt={tour.title}
-                                            className="w-100 h-100 object-fit-cover"
-                                        />
+                                        {tour.img && (
+                                            <Image
+                                                src={tour.img}
+                                                alt={tour.title}
+                                                width={500}
+                                                height={300}
+                                                className="w-100 h-100 object-fit-cover"
+                                            />
+                                        )}
 
                                         <div className="overlay">
                                             <div className="d-flex justify-content-between align-items-start">
